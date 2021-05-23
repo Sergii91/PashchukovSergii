@@ -14,3 +14,5 @@
 .boxing p{
     font-size: 14px;
 }  
+
+p EM { word-spacing: 0.9em }
