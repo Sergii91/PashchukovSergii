@@ -1,0 +1,46 @@
+* { margin: 0;
+    padding: 0;
+}
+
+/*backgroud image*/
+
+.background-image {
+    background-image: url(../img/infinity.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 200px 0;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+/*div one*/
+
+.container-one {
+    width: 50%;
+
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    text-transform: lowercase;
+    text-indent: 20px;
+    color: white;
+}
+
+/*div two*/
+
+.container-two {
+    width: 50%;
+}
+
+input {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px
+}
