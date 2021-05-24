@@ -1,0 +1,34 @@
+    
+    ul.menu {
+        font-family: 'kohosemibold';
+        color: gold;
+    }
+
+    a {
+        font-family: 'kohomedium_italic';
+        color: brown; 
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    ul.menu li a:hover {
+        color: greenyellow;
+        font-size: 50px;
+    } 
+
+    
+    /* font-family: 'kohobold';
+    font-family: 'kohobold_italic';
+    font-family: 'kohoextralight';
+    font-family: 'kohoextralight_italic';
+    font-family: 'kohoitalic';
+    font-family: 'koholight';
+    font-family: 'koholight_italic';
+    font-family: 'kohomedium';
+    font-family: 'kohomedium_italic';
+    font-family: 'kohoregular';
+    font-family: 'kohosemibold';
+    font-family: 'kohosemibold_italic'; */
+
+
+
