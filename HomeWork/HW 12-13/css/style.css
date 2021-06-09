@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, 
+html {
+    height: 100%;
+}
+
+.for-page {
+    position: relative;
+    min-height: 100%;
+}
+.page {
+    padding-bottom: 116px;
+}
+
+body {
+    color: #333;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 20px;
+    background: rgb(255, 255, 255);
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    padding-bottom: 10px;
+}
+
+.slogan {
+    float: left;
+    width: 400px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 11px;
+    margin-left: 170px;
+}
+
+.header-contact {
+    float: right;
+}
+
+.header-contact a {
+    display: block;
+    padding: 3px 0;
+}
+
+.header-contact {
+    display: block;
+    text-decoration: none;
+    line-height: 10px;
+    color: #0f428e;
+    font-weight: bold;
+}
+
+.header-contact a:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    background-color: blue;
+}
+
+.nav ul.menu {
+    list-style: none;
+
+}
+
+.nav ul.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 15px;
+
+}
+
+
+.nav ul.menu li a:hover {
+    background-color: crimson;
+
+}
+
+.nav ul.menu li ul.sub-menu {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 37,5px;
+    background-color: cyan;
+    width: 200px;
+    padding: 10px 0;
+    display: none; 
+    z-index: 10;
+}
+
+.nav ul.menu li ul.sub-menu li a {
+    padding: 3px 20px;
+    display: block;
+
+}
+
+.nav ul.menu li ul.sub-menu li {
+    display: block;
+}
+
+.nav ul.menu li:nth-child(5):hover ul.sub-menu {
+    display: block;
+}
+
+.slide1 {
+    background: url(../img/cosmos.jpg) no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+
+}
+
+.slide2 {
+    background: url(../img/image2.jpg) no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.slide3 {
+    background: url(../img/image3.jpg) no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+#carousel-main .owl-item .item h2{
+    font-size: 50px;
+    color: #fff;
+}
+
+#carousel-main .owl-item .item p{
+   font-size: 20px;
+   color: #333;
+}
+
+
+.slide {
+    background: rgb(255, 255, 255, 0.6);
+    padding: 20px;
+    width: 600px;
+}
+
+#carousel-main .owl-nav .owl-prev{
+    position: absolute;
+    left: 20px;
+    bottom: 50%;
+
+}
+
+#carousel-main .owl-nav .owl-prev:hover{
+    background: none;
+    opacity: 0.6;
+}
+
+#carousel-main .owl-nav .owl-next {
+    position: absolute;
+    right: 20px;
+    bottom: 50%;
+
+}
+
+#carousel-main .owl-nav .owl-next:hover{
+    background: none;
+    opacity: 0.6;
+}
+
+#carousel-main .owl-nav .owl-next i,
+#carousel-main .owl-nav .owl-prev i {
+    font-size: 40px;
+    color: #fff;
+}
+
+.sidebar {
+    width: 400px;
+    float: left;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.aside {
+    width: 770px;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 30px;
+    font-size: 15px;
+    padding-top: 25px;
+    text-align: justify;
+
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a{
+    font-size: 30px;
+    display: block;
+    width: 200px;
+    background-color: silver;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar ul li a:hover{
+    color: rgb(255, 255, 255);
+    background: springgreen;
+}
+
+.footer {
+    background: springgreen;
+    color: tan;
+}
+
+.footer {
+    background-color: #0f428e;
+    color: #fff;
+    padding: 50px 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
