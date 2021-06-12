@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1170;
+    margin: 0 auto;
+}
+
+.text-shadow{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.shadow-one {
+    text-shadow: 15px 35px 0px rgba(133, 133, 133, 0.5);
+    margin-bottom: 30px;
+}
+
+.shadow-two {
+    text-shadow: 15px 35px 3px rgba(133, 133, 133, 0.5);
+    margin-bottom: 40px;
+}
+
+.shadow-three {
+   text-shadow:  15px 15px 0px rgba(252, 248, 25, 0.966), -15px -15px 0px rgba(19, 233, 248, 0.863);
+   margin-bottom: 30px;
+}
+
+.shadow-four {
+    color: rgb(216, 194, 149);
+    text-shadow: -1px -1px #666, -1px -1px #666;
+}
+
+.shadow-five {
+    color: rgb(216, 194, 149);
+    text-shadow: 1px 1px 2px #666, 1px 1px #666; 
+}
+
+.shadow-six {
+    color:  rgb(216, 194, 149);
+    text-shadow: 1px 1px #000, -1px -1px #000; 
+}
+
+.box-container{
+    position: relative;
+    margin-left: 70px;
+}
+
+.box-shadow{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    margin-bottom: 30px;
+}
+
+.box {
+    box-shadow: 10px 15px gray;
+}
+
+.box-one {
+    box-shadow: 10px 15px 4px gray;
+}
+
+.box-two {
+    box-shadow: inset -3px -3px 4px rgba(252, 248, 25, 0.966), inset 3px 3px 4px rgba(19, 233, 248, 0.863);
+}
+
+.box-shadow-one{
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.box-shadow-two{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.box-three{
+    background: linear-gradient(to right, red 10%, blue 50%, white 85%, red 100%);
+}
+
+.box-four {
+    background: linear-gradient(to bottom, red 100px, white 0px, white 200px, red 100px);
+}
+
+.box-five {
+    background: radial-gradient(circle closest-side, rgb(11, 217, 245), rgb(64, 99, 255));
+}
+
+.box-six {
+    background: radial-gradient(circle closest-corner at 20px 30px, rgb(11, 217, 245), rgb(64, 99, 255));
+}
+
+.box-seven {
+   background: radial-gradient(circle closest-side, rgb(46, 48, 46) 20%, white 50%, white 60%, rgb(0, 116, 0) 70%);
+}
