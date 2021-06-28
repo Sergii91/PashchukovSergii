@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sprite {
+    width: 94px;
+    height: 143px;
+    background-image: url(../img/scottpilgrim_multiple.png);
+    margin: 0 auto;
+    animation: sprite 1s steps(8) infinite;
+    -o-animation: sprite 1s steps(8) infinite;
+    -moz-animation: sprite 1s steps(8) infinite;
+    -webkit-animation: sprite 1s steps(8) infinite;
+    display: block;
+}
+
+@keyframes sprite {
+    from {
+        background-position: 0px 0px;
+    }
+    to{
+        background-position: -845px 0px;
+    }
+}
