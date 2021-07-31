@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onClick="ts1()">Задание 1</button>
+    <div class="task1"></div>
+    <button onClick="ts2()">Задание 2</button>
+    <div class="task2"></div>
+    <button onClick="ts3()">Задание 3</button>
+    <div class="task3"></div>
+</body>
+<script>
+    let arr = ["зима", "весна", "лето", "осень", "других сезонов нет"];
+
+    function ts1(){
+        let task1;
+        task1 = document.querySelector(".task1");
+
+    // let arr3 = ["один", "два", "три", "четыре", "пять", "шесть", "бесконечность"];
+    // let arr4 = ["BMW", "AUDI", "Mersedez", "другие"];
+        for (let i of arr){
+            task1.innerHTML += i + " ";
+        }
+    };
+
+    let arr1 = ["поезд", "самолет", "самокат", "машина", "велосипед", "танк", "еще много других"];
+
+    function ts2(){
+        let task2;
+        task2 = document.querySelector(".task2");
+
+        for (let i in arr1){
+            task2.innerHTML += i + "</br>"; 
+            task2.innerHTML += arr1[i] + "</br>";
+        }
+    };
+
+
+    let arr2 = ["Вася", "Петя", "Семен", "Ваня", "Коля"];
+
+        function ts3(){
+            let task3;
+            task3 = document.querySelector(".task3");
+            let a;
+        for(let i in arr2){
+            a = i;
+            a++;
+        }
+        task3.innerHTML += a + " ";
+    };
+    
+    // let arr = ["str1", "str2", "str3", "str4", "str5"];
+
+    // for(let i of arr){
+    //     console.log(i);
+    // }
+
+    // let arr2 = ["str1", "str2", "str3", "str4", "str5", "str6", "str7"];
+
+    // for(let i in arr2){
+    //     console.log(i);
+    //     console.log(arr2[i]);
+    // }
+
+    // let arr3 = ["str1", "str2", "str3", "str4", "str5"];
+
+    // for(let i in arr3){
+    //     console.log(arr3.length);
+    // }
+
+
+
+
+
+</script>
+</html>

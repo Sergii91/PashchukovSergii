@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="btn">
+        <button class="button">press here</button>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+        width: 1170px;
+        margin: 50px auto;
+        position: relative;
+    }
+
+    .button{
+        background-color: rgb(255, 131, 131);
+        font-size: 0px;
+        color: white;
+        margin: 0px auto;
+        text-transform: uppercase;
+        font-family: 'Courier New', Courier, monospace;
+        border: solid 5px black;
+        border-radius: 30px;
+        text-align: center;
+        text-decoration: none;
+        width: 200px;
+        height: 80px;
+        position: relative;
+        left: 40%;
+    }
+
+    .button:before{
+        font-size: 20px;
+        font-weight: bold;
+        content: "Натиснути на кнопку";
+        width: 200px;
+        height: 80px;
+    }
+
+    .button:hover{
+    background: red;
+    transition: .2s;
+    border-radius: 30px;
+    border: solid 3px black;
+}
+</style>
+
+
+<script>
+    // let a = Math.max(50,49,36,39);
+    // let b = Math.min(50,49,36,39);
+
+    // let sum = prompt ("введите максимальное и минимальное число", "");
+    //     if (sum == 50){
+    //         alert ("Да, это максимальное");
+    //     }else if (sum == 36){
+    //         alert ("Да, это минимальное");
+    //     }else{
+    //         alert ("Вы не угадали");
+    //     }
+
+        let col = prompt("Введите название цвета", "");
+
+        switch(col){
+            case 'blue':
+            alert("Верно, Вы ввели blue");
+            break;
+
+            case 'black':
+            alert("Верно, Вы ввели black");
+            break;
+
+            case 'yellow':
+            alert("Верно, вы ввели yellow");
+            break;
+
+            case 'red':
+            alert("Верно, Вы ввели red");
+            break;
+
+            case 'white':
+            alert("Верно, Вы ввели white");
+            break;
+
+            default:
+            alert("Совсем не то");
+            break;
+        }
+
+        if (col == 'blue'){
+            alert ("Верно, Вы ввели blue");
+        }else if (col == 'black'){
+            alert ("Верно, Вы ввели black");
+        }else if (col == 'yellow'){
+            alert ("Верно, Вы ввели yellow");
+        }else if (col == 'red'){
+            alert ("Верно, Вы ввели red");
+        }else if (col == 'white'){
+            alert ("Верно, Вы ввели white");
+        }else{
+            alert("Совсем не то");
+        }
+
+
+        
+
+</script>
+</html>
