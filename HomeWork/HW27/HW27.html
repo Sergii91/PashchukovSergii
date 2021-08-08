@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #more{
+        display: none;
+    }
+
+   
+</style>
+
+<body>
+    <div>
+    Планируется направить часть средств МВФ в золотовалютные резервы НБУ, а также на стимулирование экономического развития в стране. 
+Об этом сообщил советник президента по экономическим вопросам Олег Устенко в эфире канала "Украина 24".
+"Сейчас дискуссия продолжается. Но как я понимаю ситуацию, часть <span id="dots">....</span> <span id="more">этих средств может быть заведено в золотовалютные резервы НБУ, чтобы создать дополнительную подушку безопасности для страны. Часть этих средств будет использована в этом году, но значительную часть будет использовано в следующем году", - отметил он.
+По словам Устенко, средства направят не на текущее потребление, а на стимулирование экономического развития в стране в среднем и долгосрочном промежутке времени. 
+В частности, средства можно использовать на проекты, связанные с развитием инфраструктуры, с поддержкой или стимулированием отечественных производителей, например, по поводу машиностроения.
+</span></div>
+<button class="button" onclick="showMore()" id="btn">Показать больше</button>
+</body>
+<script>
+    function showMore() {
+    let dots = document.getElementById("dots");
+    let moreText = document.getElementById("more");
+    let btnText = document.getElementById("btn");
+        if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Показать больше";
+        moreText.style.display = "none";
+        } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Показать меньше";
+      moreText.style.display = "inline";
+}
+};
+
+
+let car = {
+    "name" : "BWM",
+    "speed" : 200,
+    "color" : "black"
+};
+
+//добавляем два новых 
+car["New"] = false;
+car["weight"] = "2 tones";
+console.log(car);
+
+//длинна массива
+console.log("Длинна массива: " + Object.keys(car).length);
+
+//удаление
+delete car.speed;
+delete car.weight;
+console.log(car);
+
+//очищение
+
+car = {};
+console.log(car);
+
+//Создать функцию  через Match получить максимальное число (5, 80, -44, 120,60,-5, 206)
+
+function max(){
+    let max = Math.max(5, 80, -44, 120,60,-5, 206);
+    console.log(max);
+};
+max();
+
+
+</script>
+</html>

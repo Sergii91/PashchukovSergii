@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="person"></div>
+    <div id="person2"></div>
+</body>
+
+<script>
+    let person = {
+    firstName : "Maya",
+    lastName : "Dos",
+    language: " ",
+    name: " ",
+    'name Dog': "Profi",
+        set lang(lang){
+            this.language = lang;
+        },
+        set nameCat(nameCat){
+            this.name = nameCat;
+        }
+};
+person.lang = "ukr";
+person.nameCat = "murzik";
+document.getElementById("person").innerHTML = person.language + "</br>" + person.name;
+
+
+// Добавить свойства с помощью метода в объекте 
+// name - nameCat(свойство)
+// language - lang(свойство)
+
+// nameDog удалить
+delete person["name Dog"];
+console.log(person);
+
+// все это вывести через документ
+document.getElementById("person2").innerHTML = person.firstName + "</br>" + person.lastName + 
+"</br>" + person.language + "</br>" + person.name;
+
+</script>
+</html>
