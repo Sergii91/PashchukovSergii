@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+</body>
+
+<script>
+    // let Man = function(name, lastName, age, language){
+    //     this.name = name;
+    //     this.lastName = lastName;
+    //     this.age = age;
+    //     this.language = language;
+    //     this.show = function (){
+    //         return "Здорова! Меня зовут " + this.name + " " + this.lastName + ", мне " + this.age + ". Я говорю на " + this.language;
+    //     }
+    //     };
+
+    // let anton = new Man("Антон", "Вертон", "35", "українська");
+    // let karina = new Man("Карина", "Вертон", "28", "русский");
+
+    // console.log(anton.show);
+    // console.log(karina.show);
+
+    // document.body.innerHTML += anton.show() +"</br>" + karina.show() +"</br>";
+
+
+//1) Получить всю длину аргумента (вызове 8-сем параметров )
+
+function one (){
+    document.body.innerHTML += "Длинна аргументов: " + arguments.length + "</br>";
+    }
+one(4,7,4,3,5,8,9,10);
+
+// 2) 3 Персонаж(объект условно) - с использованием контруктора функции 
+// параметров(девять)
+
+let MobilePhone = function (weight, height, screen, color, battery, os, ram, protection){
+    this.weight = weight;
+    this.height = height;
+    this.screen = screen;
+    this.color = color;
+    this.battery = battery;
+    this.os = os;
+    this.ram = ram;
+    this.protection = protection;
+    this.info = function (){
+        return "Параметры мобильного телефона: " + "</br>" + "Вес: " + this.weight + "</br>" + "Длинна: " + this.height
+        + "</br>" + "Экран: " + this.screen + "</br>" + "Цвет: " + this.color + "</br>" + "Батарея: " + this.battery 
+        + "</br>" + "Операционная система: " + this.os + "</br>" + "Память: " + this.ram + "</br>" + "Защита:" + this.protection;
+    }
+};
+
+let iphone = new MobilePhone ("55 грамм", "100 см", "плоский", "белый", "2200 Mph", "iOS", "200 Gb", "full");
+console.log(iphone.info());
+let android = new MobilePhone ("155 грамм", "200 см", "круглый", "желтый", "1200 Mph", "android", "100 Gb", "full");
+console.log(android.info());
+let windows = new MobilePhone ("550 грамм", "1000 см", "плоский", "черный", "22200 Mph", "windows", "2000 Gb", "full");
+console.log(windows.info());
+
+document.body.innerHTML += iphone.info() + "</br>" + "</br>" + android.info() + "</br>" + "</br>" + windows.info();
+
+</script>
+</html>
